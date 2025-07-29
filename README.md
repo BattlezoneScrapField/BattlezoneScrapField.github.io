@@ -14,6 +14,8 @@ Let any of the members know if you have any questions, feedback, or want to help
 ## Website Navigation 🌐
 
 - BZCC Gamelist: https://battlezonescrapfield.github.io/BZCC-Website/
+- Battlezone Community: https://www.battlezonecommunity.com/
+- Battlezone Report: https://battlezone.report/
 
 ## Getting Started 🚀
 We'd be happy to have you contribute to this website! Here's how you can contribute:
@@ -30,6 +32,6 @@ We'd be happy to have you contribute to this website! Here's how you can contrib
 - Now, sit back and relax! 🏖️ _From here: a code reviewer will review your commits and changes to complete the merge. If your changes look great, your PR to `master` will be approved, which means your new branch `"dev-john-cooke"` will be squashed. A member of the team will create a new PR to merge your changes (that are now in `master`) into `prod`. This will trigger the automated deployment to GitHub Pages!_
 
 ## Credits 🛹
-- Website created and setup by [SirBrambley](https://github.com/LordBramster), and maintained by the Battlezone Community. 💖
+- Website created/setup by [SirBrambley](https://github.com/LordBramster), and maintained by the Battlezone Community. 💖
 - Special thanks to [F9Bomber](https://github.com/HerndonE), [Nielk1](https://github.com/Nielk1), [AI_Unit](https://github.com/JJ173), and all contributors that helped get this project started. 💫
 
