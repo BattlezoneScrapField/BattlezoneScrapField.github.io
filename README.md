@@ -11,6 +11,10 @@ Let any of the members know if you have any questions, feedback, or want to help
 
 <br>
 
+## Website Navigation 🌐
+
+- BZCC Gamelist | https://battlezonescrapfield.github.io/BZCC-Website/
+
 ## Getting Started 🚀
 We'd be happy to have you contribute to this website! Here's how you can contribute:
 
