@@ -13,7 +13,7 @@ Let any of the members know if you have any questions, feedback, or want to help
 
 ## Website Navigation 🌐
 
-- BZCC Gamelist | https://battlezonescrapfield.github.io/BZCC-Website/
+- BZCC Gamelist: https://battlezonescrapfield.github.io/BZCC-Website/
 
 ## Getting Started 🚀
 We'd be happy to have you contribute to this website! Here's how you can contribute:
@@ -31,4 +31,5 @@ We'd be happy to have you contribute to this website! Here's how you can contrib
 
 ## Credits 🛹
 - Website created and setup by [SirBrambley](https://github.com/LordBramster), and maintained by the Battlezone Community. 💖
+- Special thanks to [F9Bomber](https://github.com/HerndonE), [Nielk1](https://github.com/Nielk1), [AI_Unit](https://github.com/JJ173), and all contributors that helped get this project started. 💫
 
