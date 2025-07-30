@@ -17,7 +17,7 @@ Let any of the members know if you have any questions, feedback, or want to help
 - Battlezone Community: https://www.battlezonecommunity.com/
 - Battlezone Report: https://battlezone.report/
 
-## Getting Started 🚀
+## Getting Started 😎
 We'd be happy to have you contribute to this website! Here's how you can contribute:
 
 ### Local Environment
@@ -30,6 +30,20 @@ We'd be happy to have you contribute to this website! Here's how you can contrib
 - Commit your changes to a **new** branch, sourced from `master`. You may call your branch whatever you like (i.e., `"dev-john-cooke"`).
 - Create a **Pull Request** to the `master` branch from your newly developed branch. Make sure to give it an adequate title, description, and label!
 - Now, sit back and relax! 🏖️ _From here: a code reviewer will review your commits and changes to complete the merge. If your changes look great, your PR to `master` will be approved, which means your new branch `"dev-john-cooke"` will be squashed. A member of the team will create a new PR to merge your changes (that are now in `master`) into `prod`. This will trigger the automated deployment to GitHub Pages!_
+
+## Preparation 🚀
+
+1. Remove PHP
+2. Favicon
+3. Site Embed Meta
+
+```html
+<meta property="og:title" content="Battlezone Scrap Field">
+<meta property="og:description" content="A one-stop shop for Battlezone community members to share their open-source resources or projects.">
+<meta property="og:image" content="https://raw.githubusercontent.com/BattlezoneScrapField/.github/refs/heads/main/profile/img/isdf_scavenger.png">
+<meta property="og:url" content="https://battlezonescrapfield.github.io/">
+<meta property="og:type" content="website">
+```
 
 ## Credits 🛹
 - Website created/setup by [SirBrambley](https://github.com/LordBramster), and maintained by the Battlezone Community. 💖
