@@ -14,7 +14,7 @@
   --background-color: #22282b; /* Background color for the entire website, including individual sections */
   --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #fd9347; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #fe9c55; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #394247; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -22,11 +22,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #bcbcbc;  /* The default color of the main navmenu links */
-  --nav-hover-color: #fd9347; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #fe9c55; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #394247; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #394247; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #fd9347; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #fe9c55; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -45,10 +45,10 @@
 }
 
 .mid-background {
-  --background-color: #212a2f;
+  --background-color: #10151c;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #151f2b;
+  --surface-color: #222b35;
   --contrast-color: #ffffff;
 }
 
@@ -978,45 +978,29 @@ section,
 }
 
 .section-title h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--accent-color);
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-family: var(--default-font);
+}
+
+.section-title div {
+  color: var(--heading-color);
+  margin: 10px 0 0 0;
   font-size: 32px;
   font-weight: 700;
-  position: relative;
+  font-family: var(--heading-font);
 }
 
-.section-title h2:before,
-.section-title h2:after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  background: var(--accent-color);
-  display: inline-block;
-}
-
-.section-title h2:before {
-  margin: 0 15px 10px 0;
-}
-
-.section-title h2:after {
-  margin: 0 0 10px 15px;
-}
-
-.section-title p {
-  margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .section-title h2 {
-    font-size: 20px;
-  }
-
-  .section-title h2:before,
-  .section-title h2:after {
-    content: "";
-    width: 20px;
-    height: 2px;
-    background: var(--accent-color);
-    display: inline-block;
-  }
+.section-title div .description-title {
+  color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
@@ -1274,15 +1258,15 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Call To Action Section
+# Info Section
 --------------------------------------------------------------*/
-.call-to-action {
+.info {
   padding: 80px 0;
   position: relative;
   clip-path: inset(0);
 }
 
-.call-to-action img {
+.info img {
   position: fixed;
   top: 0;
   left: 0;
@@ -1293,7 +1277,7 @@ section,
   z-index: 1;
 }
 
-.call-to-action:before {
+.info:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
   position: absolute;
@@ -1301,22 +1285,22 @@ section,
   z-index: 2;
 }
 
-.call-to-action .container {
+.info .container {
   position: relative;
   z-index: 3;
 }
 
-.call-to-action h3 {
+.info h3 {
   font-size: 28px;
   font-weight: 700;
   color: var(--default-color);
 }
 
-.call-to-action p {
+.info p {
   color: var(--default-color);
 }
 
-.call-to-action .cta-btn {
+.info .cta-btn {
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 16px;
@@ -1331,7 +1315,7 @@ section,
   color: var(--default-color);
 }
 
-.call-to-action .cta-btn:hover {
+.info .cta-btn:hover {
   background: var(--accent-color);
   color: var(--contrast-color);
   border: 2px solid var(--accent-color);
@@ -1341,7 +1325,6 @@ section,
 # About Section
 --------------------------------------------------------------*/
 .about {
-  --background-color: #10151c;
   padding-top: 100px;
   position: relative;
   overflow: hidden;
@@ -1512,5 +1495,203 @@ section,
 
   .about .scribble {
     transform: scale(0.7);
+  }
+}
+
+/*--------------------------------------------------------------
+# Spotlight Section
+--------------------------------------------------------------*/
+.spotlight .service-card {
+  background-color: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.spotlight .service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.spotlight .service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.spotlight .service-card.featured {
+  border-color: var(--accent-color);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 85%);
+}
+
+.spotlight .service-card.featured::before {
+  transform: scaleX(1);
+}
+
+.spotlight .service-card.featured .icon-box {
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
+  color: var(--contrast-color);
+}
+
+.spotlight .service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px color-mix(in srgb, var(--default-color), transparent 85%);
+  border-color: var(--accent-color);
+}
+
+.spotlight .service-card .card-header {
+  padding: 25px 25px 15px;
+  text-align: center;
+}
+
+.spotlight .service-card .card-header .icon-box {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  font-size: 32px;
+  transition: all 0.3s ease;
+}
+
+.spotlight .service-card .card-header h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--heading-color);
+}
+
+.spotlight .service-card .card-body {
+  padding: 0 25px 15px;
+}
+
+.spotlight .service-card .card-body p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.spotlight .service-card .card-body .feature-image {
+  width: 100%;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.spotlight .service-card .card-body .feature-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, color-mix(in srgb, var(--accent-color), transparent 80%), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.spotlight .service-card .card-body .feature-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.spotlight .service-card:hover .feature-image::before {
+  opacity: 1;
+}
+
+.spotlight .service-card:hover .feature-image img {
+  transform: scale(1.1);
+}
+
+.spotlight .service-card .card-footer {
+  padding: 15px 25px 25px;
+}
+
+.spotlight .service-card .card-footer .btn-explore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+  border-radius: 8px;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.spotlight .service-card .card-footer .btn-explore i {
+  margin-left: 8px;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.spotlight .service-card .card-footer .btn-explore:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  color: var(--contrast-color);
+  border-color: var(--accent-color);
+}
+
+.spotlight .service-card .card-footer .btn-explore:hover i {
+  transform: translate(3px, -3px);
+}
+
+.spotlight .service-card.featured .btn-explore {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--accent-color);
+}
+
+.spotlight .service-card.featured .btn-explore:hover {
+  background: color-mix(in srgb, var(--accent-color), var(--heading-color) 20%);
+  border-color: color-mix(in srgb, var(--accent-color), var(--heading-color) 20%);
+}
+
+@media (max-width: 768px) {
+  .spotlight .service-card .card-header {
+    padding: 20px 20px 10px;
+  }
+
+  .spotlight .service-card .card-header .icon-box {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .spotlight .service-card .card-header h4 {
+    font-size: 16px;
+  }
+
+  .spotlight .service-card .card-body {
+    padding: 0 20px 10px;
+  }
+
+  .spotlight .service-card .card-body .feature-image {
+    height: 140px;
+  }
+
+  .spotlight .service-card .card-footer {
+    padding: 10px 20px 20px;
   }
 }

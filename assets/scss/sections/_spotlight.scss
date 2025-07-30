@@ -1,0 +1,202 @@
+// main: ../main.scss
+/*--------------------------------------------------------------
+# Spotlight Section
+--------------------------------------------------------------*/
+.spotlight {
+  .service-card {
+    background-color: var(--surface-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 30%));
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+
+    &.featured {
+      border-color: var(--accent-color);
+      box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 85%);
+
+      &::before {
+        transform: scaleX(1);
+      }
+
+      .icon-box {
+        background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), var(--heading-color) 20%));
+        color: var(--contrast-color);
+      }
+    }
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 40px color-mix(in srgb, var(--default-color), transparent 85%);
+      border-color: var(--accent-color);
+    }
+
+    .card-header {
+      padding: 25px 25px 15px;
+      text-align: center;
+
+      .icon-box {
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 20px;
+        background: color-mix(in srgb, var(--accent-color), transparent 90%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--accent-color);
+        font-size: 32px;
+        transition: all 0.3s ease;
+      }
+
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 0;
+        color: var(--heading-color);
+      }
+    }
+
+    .card-body {
+      padding: 0 25px 15px;
+
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: color-mix(in srgb, var(--default-color), transparent 20%);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .feature-image {
+        width: 100%;
+        height: 160px;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: linear-gradient(45deg, color-mix(in srgb, var(--accent-color), transparent 80%), transparent);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s ease;
+        }
+      }
+    }
+
+    &:hover .feature-image {
+      &::before {
+        opacity: 1;
+      }
+
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    .card-footer {
+      padding: 15px 25px 25px;
+
+      .btn-explore {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 12px 20px;
+        background: transparent;
+        border: 2px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+        border-radius: 8px;
+        color: var(--accent-color);
+        font-weight: 600;
+        font-size: 14px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        i {
+          margin-left: 8px;
+          font-size: 16px;
+          transition: transform 0.3s ease;
+        }
+
+        &:hover {
+          background: color-mix(in srgb, var(--accent-color), transparent 80%);
+          color: var(--contrast-color);
+          border-color: var(--accent-color);
+
+          i {
+            transform: translate(3px, -3px);
+          }
+        }
+      }
+    }
+
+    &.featured .btn-explore {
+      background: var(--accent-color);
+      color: var(--contrast-color);
+      border-color: var(--accent-color);
+
+      &:hover {
+        background: color-mix(in srgb, var(--accent-color), var(--heading-color) 20%);
+        border-color: color-mix(in srgb, var(--accent-color), var(--heading-color) 20%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .card-header {
+        padding: 20px 20px 10px;
+
+        .icon-box {
+          width: 60px;
+          height: 60px;
+          font-size: 28px;
+          margin-bottom: 15px;
+        }
+
+        h4 {
+          font-size: 16px;
+        }
+      }
+
+      .card-body {
+        padding: 0 20px 10px;
+
+        .feature-image {
+          height: 140px;
+        }
+      }
+
+      .card-footer {
+        padding: 10px 20px 20px;
+      }
+    }
+  }
+}

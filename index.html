@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
+  <!-- Embed -->
   <meta property="og:title" content="Battlezone Scrap Field">
   <meta property="og:description" content="A one-stop shop for Battlezone community members to share their open-source resources or projects.">
   <meta property="og:image" content="https://raw.githubusercontent.com/BattlezoneScrapField/.github/refs/heads/main/profile/img/isdf_scavenger.png">
@@ -30,6 +31,7 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -49,7 +51,9 @@
         <ul>
           <li><a href="#hero" class="active">Welcome</a></li>
           <li><a href="#about">Info</a></li>
-          <li><a href="https://battlezonescrapfield.github.io/BZCC-Website/">BZCC Gamelist</a></li>
+          <li><a href="#spotlight">Spotlight</a></li>
+          |
+          <li><a href="https://battlezonescrapfield.github.io/BZCC-Website/">View BZCC MATCHES<i class="bi bi-arrow-up-right"></i></a></li>
 
           <li class="dropdown"><a href="#"><span>Steam Workshops</span><i class="bi bi-steam toggle-dropdown"></i></a>
             <ul>
@@ -103,7 +107,7 @@
 
               <div class="description">
                 <p>
-                  We are a <i>community-managed</i> organization that aims to provide a one-stop shop for Battlezone community members to share their open-source resources or projects.<br>Our work is collected on <b>GitHub</b>, where we invite all modders and developers to contribute to the world of <b>Battlezone</b>!</p>
+                  A sanctuary for Battlezone modding! We are a <i>community-managed</i> organization that aims to provide a one-stop shop for Battlezone community members to share their open-source resources or projects.<br>Our work is collected on <b>GitHub</b>, where we invite all modders and developers to contribute to the world of <b>Battlezone</b>!</p>
               </div>
 
               <div class="cta-button">
@@ -138,10 +142,10 @@
       </div>
     </section><!-- /Hero Section -->
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
+    <!-- Info Section -->
+    <section id="info" class="info section dark-background">
 
-      <img src="https://battlezonecombatcommander.com/images/gallery/large/20.jpg" alt="">
+      <img src="https://battlezonecombatcommander.com/images/gallery/large/16.jpg" alt="">
 
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -155,10 +159,10 @@
         </div>
       </div>
 
-    </section><!-- /Call To Action Section -->
+    </section><!-- /Info Section -->
 
     <!-- About Section -->
-    <section id="about" class="about section dark-background">
+    <section id="about" class="about section mid-background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -201,6 +205,109 @@
 
     </section><!-- /About Section -->
 
+    <!-- Spotlight Section -->
+    <section id="spotlight" class="spotlight section mid-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Spotlight</h2>
+        <div><span>Check out</span> <span class="description-title">popular projects</span></div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card-header">
+                <div class="icon-box">
+                  <i class="bi bi-github"></i>
+                </div>
+                <h4>Modding Utilities</h4>
+              </div>
+              <div class="card-body">
+                <p>Check out a variety of tools made by other modders to make life a bit easier.</p>
+                <div class="feature-image">
+                  <img src="https://raw.githubusercontent.com/BattlezoneScrapField/.github/refs/heads/main/profile/gif/battlezone_shell_clip_text_blank.gif" alt="BZCC" class="img-fluid">
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/orgs/BattlezoneScrapField/repositories" class="btn-explore">
+                  View Repo List<i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card-header">
+                <div class="icon-box">
+                  <i class="bi bi-github"></i>
+                </div>
+                <h4>BZCC Game List</h4>
+              </div>
+              <div class="card-body">
+                <p>View multiplayer game data (maps &amp; active players) for <b>Battlezone: CC</b>.</p>
+                <div class="feature-image">
+                  <img src="https://raw.githubusercontent.com/BattlezoneScrapField/BZCC-Website/refs/heads/master/img/opengraph.png" alt="BZCC" class="img-fluid">
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/BattlezoneScrapField/BZCC-Website" class="btn-explore">
+                  View This Repo
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card-header">
+                <div class="icon-box">
+                  <i class="bi bi-github"></i>
+                </div>
+                <h4>Forgotten Enemies</h4>
+              </div>
+              <div class="card-body">
+                <p>A <i>legacy mod</i> unearthed and remastered by dedicated members of the BZ community.</p>
+                <div class="feature-image">
+                  <img src="https://raw.githubusercontent.com/BattlezoneScrapField/.github/refs/heads/main/profile/img/FE.jpg" alt="BZCC" class="img-fluid">
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/BlackDragonN001/FERemastered" class="btn-explore">
+                  View This Project<i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xl-3">
+            <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="card-header">
+                <div class="icon-box">
+                  <i class="bi bi-github"></i>
+                </div>
+                <h4>BZCC Beta Patch</h4>
+              </div>
+              <div class="card-body">
+                <p>Help out the&nbsp;<b>BZCC Beta Team</b>&nbsp;by playtesting the latest build to the upcoming patch!</p>
+                <div class="feature-image">
+                  <img src="https://battlezonecombatcommander.com/images/gallery/large/20.jpg" alt="BZCC" class="img-fluid">
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/BattlezoneScrapField/BZCC-Patch-Notes" class="btn-explore">Read Patch Notes<i class="bi bi-arrow-up-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Spotlight Section -->
+
   </main>
 
   <footer id="footer" class="footer position-relative dark-background">
@@ -212,7 +319,7 @@
           <div class="address">
             <h4>Resources</h4>
             <p><a href="https://github.com/orgs/BattlezoneScrapField/repositories">BattlezoneScrapField</a></p>
-            <p><a href="https://battlezonescrapfield.github.io/BZCC-Website/">BZCC Gamelist</a></p>
+            <p><a href="https://battlezonescrapfield.github.io/BZCC-Website/">BZCC Game List</a></p>
           </div>
         </div>
 
@@ -239,6 +346,7 @@
             <h4>Other Sites</h4>
             <p><a href="https://www.battlezonecommunity.com/">The Battlezone Community</a></p>
             <p><a href="https://battlezone.report/">The Battlezone Report</a></p>
+            <p><a href="https://bzscrap.org/">BZScrap</a></p>
           </div>
         </div>
 
@@ -262,6 +370,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
